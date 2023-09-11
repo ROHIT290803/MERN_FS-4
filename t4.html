@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .snav {
+    position: fixed;
+    top: 20;
+    left: 0;
+    width: 0px;
+    height: 100%;
+    background-color: transparent;
+    
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+.nav{
+    background-color: #6d6c6c;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s;
+    position: relative;
+    border: none;
+    text-align: left;
+    margin-bottom: 10px;
+    height: 18.5px;
+}
+
+.nav:first-child {
+    margin-top: 30px;
+}
+
+.nav:nth-child(1) {
+    background-color: #278f39;
+}
+
+.nav:nth-child(2) {
+    background-color: #1e81d7;
+}
+
+.nav:nth-child(3) {
+    background-color: red;
+}
+.des{
+    display: none;
+    background-color: #6d6c6c;
+    color: #fff;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    white-space: nowrap;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.des a {
+    text-decoration: none;
+    color: inherit;
+}
+.nav:hover .des {
+    display: block;
+}
+.content {
+    margin-left: 90px;
+    padding: 20px;
+    
+}
+
+.nav:nth-child(1) .des {
+    background-color: #278f39;
+    color: #fff;
+}
+
+.nav:nth-child(2) .des {
+    background-color: #0074d9;
+    color: #fff;
+}
+
+.nav:nth-child(3) .des {
+    background-color: red;
+    color: #fff;
+}
+    </style>
+</head>
+
+<body>
+    <div class="snav">
+        <div class="nav">
+            <span class="bt"></span>
+            <div class="des"><a href="#">Home</a></div>
+        </div>
+        <div class="nav">
+            <span class="bt"></span>
+            <div class="des"><a href="#">About</a></div>
+        </div>
+        <div class="nav">
+            <span class="bt"></span>
+            <div class="des"><a href="#">HTML</a></div>
+        </div>
+        <div class="nav">
+            <span class="bt"></span>
+            <div class="des"><a href="#">CSS</a></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Hoverable Sidenav Buttons</h1>
+        <p>Hover over the buttons in the left side navigation to open them.</p>
+    </div>
+</body>
+
+</html>
